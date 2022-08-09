@@ -50,10 +50,6 @@ nav form input {
     margin-right: 3px;
 }
 
-nav form input:focus {
-    outline: none;
-}
-
 nav form button {
     border: none;
     position: relative;
@@ -250,21 +246,17 @@ footer {
     margin: 1px;
 }
 
-@media (max-width: 830px) {
-    .list {
-        margin-right: 30px;
-    }
 
-    .header img {
-        width: 15rem;
-    }
-
-    .categ {
+@media (max-width: 1280px) {
+    .business {
         display: none;
     }
 
-    .bord {
-        height: 50px;
+    header .ads {
+        width: 300px;
+        top: 150px;
+        left: 250px;
+        padding: 10px;
     }
 }
 
@@ -291,6 +283,23 @@ footer {
     }
 }
 
+@media (max-width: 830px) {
+    .list {
+        margin-right: 30px;
+    }
+
+    .header img {
+        width: 15rem;
+    }
+
+    .categ {
+        display: none;
+    }
+
+    .bord {
+        height: 50px;
+    }
+}
 
 @media (max-width: 690px) {
 
@@ -310,18 +319,5 @@ footer {
 
     nav {
         justify-content: space-between;
-    }
-}
-
-@media (max-width: 1280px) {
-    .business {
-        display: none;
-    }
-
-    header .ads {
-        width: 300px;
-        top: 150px;
-        left: 250px;
-        padding: 10px;
     }
 }
