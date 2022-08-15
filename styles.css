@@ -1,323 +1,277 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
 }
-
-
-nav button:hover {
-    color: #401b9c;
+.navbar {
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+  padding-top: 5px;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 1;
 }
-
-nav .menubar {
-    display: none;
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
-
-nav form {
-    display: flex;
-    width: 100%;
-    margin-right: 85px;
-    position: relative;
-    right: 12px;
-    margin: auto;
+.butt {
+  border: none;
+  background-color: transparent;
+  width: max-content;
+  white-space: nowrap;
+  color: black;
+  font-size: 1rem;
 }
-
-nav .udlogo {
-    border: none;
-    background-color: white;
-    position: relative;
-    height: 2.5rem;
+.butt:hover {
+  color: #401b9c;
 }
-
-nav form input {
-    border: 0.1rem solid black;
-    padding: 0px 2.6rem 0px 2.6rem;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: stretch;
-    border-radius: 35px;
-
-    margin-right: 3px;
+.menubar {
+  display: none;
 }
-
-nav form button {
-    border: none;
-    position: relative;
-    top: 6px;
-    left: 40px;
+.udlogo {
+  width: 91px;
+  height: 34px;
+  position: relative;
 }
-
-nav .login {
-    border: 1px solid black;
-    height: 45px;
-    width: max-content;
-    padding: 0px 15px 0px 15px;
+.categ {
+  margin-left: 50px;
 }
-
-nav .signup {
-    background-color: black;
-    color: white;
-    height: 45px;
-    width: max-content;
-    padding: 0px 15px 0px 15px;
+.search {
+  border: 1px solid black;
+  width: 50px;
+  height: 2.8rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 35px;
+  flex-grow: 0.7;
+  background-color: #f7f9fa;
+  margin: 0 1.2rem;
 }
-
-.cart {
-    margin-top: 15px;
-    padding: 14px;
-    height: max-content;
+.search form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  padding: 0 2.4rem 0 0;
 }
-
+.search form input {
+  flex-grow: 1;
+  background-color: #f7f9fa;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  height: 2.4rem;
+  padding-left: 1rem;
+}
+.search div {
+  height: 4.8rem;
+  width: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search form button:hover {
+  background-color: rgb(0 0 0 / 10%);
+  color: black;
+}
+.login {
+  font-weight: bold;
+  border: 1px solid black;
+  height: 40px;
+  width: max-content;
+  padding: 0px 15px 0px 15px;
+}
+.signup {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  width: max-content;
+  padding: 0px 10px 0px 10px;
+}
+.signup:hover {
+  color: rgb(210, 190, 190);
+}
 .lang {
-    border: 1px solid black;
-    margin-right: 10px;
-    padding: 14px 14px;
-    height: 45px;
-}
-
-nav {
-    display: flex;
-    position: relative;
-    height: 70px;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 9px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-nav button {
-    border: none;
-    background-color: transparent;
-    width: max-content;
-    white-space: nowrap;
-    margin: 5px;
-    line-height: 2;
-    color: black;
-    font-size: 1rem;
+  border: 1px solid black;
+  margin-right: 15px;
+  padding: 10px 10px;
+  height: 45px;
 }
 
 .homepage {
-    width: 75%;
-    margin: auto;
+  width: 75%;
+  margin: auto;
 }
 
 header img {
-    width: 100%;
+  width: 100%;
 }
-
 
 header .ads p {
-    font-size: 18px;
-    margin: 0;
+  font-size: 18px;
+  margin: 0;
 }
-
-.bord {
-    height: 50px;
-}
-
 
 header .ads h1 {
-    font-size: 30px;
-    margin: 0;
-    padding-bottom: 20px;
-}
-
-.Courses .selectcourse h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  font-size: 30px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 header .ads {
-    background-color: white;
-    line-height: 1;
-    width: 450px;
-    position: absolute;
-    top: 150px;
-    left: 250px;
-    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.5);
-    padding: 10px;
+  background-color: white;
+  line-height: 1;
+  width: 450px;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
-
-.Courses .selectcourse p {
-    font-size: larger;
-    margin-bottom: 10px;
-}
-
-
-
-.Courses .selectcourse .list :nth-child(1) {
-    color: black;
-}
-
-.homepage .coursesbox {
-    border: 1px solid rgba(128, 128, 128, 0.365);
-}
-
-.Courses .selectcourse .list {
-    margin-bottom: 15px;
-    display: flex;
-    font-weight: bold;
-    color: gray;
-    padding: 0px;
-    width: 700px;
-    justify-content: space-between;
-    list-style-type: none;
-    min-width: 700px;
-}
-
-.coursesbox div {
-    margin: 20px;
-}
-
-.coursesbox div p {
-    width: 70%;
-    font-size: 20px;
-    color: rgb(14, 3, 3);
-    line-height: 25px;
-}
-
-
-
-.courselist ul {
-    flex-wrap: wrap;
-    list-style-type: none;
-    display: flex;
-}
-
-.courselist ul li div {
-    margin: 10px 30px 30px -10px;
-}
-
-.coursesbox div button {
-    border: 1px solid black;
-    padding: 10px 18px;
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    margin-top: 20px;
-    background-color: white;
-    color: black;
-}
-
-.courselist ul li div .price {
-    display: inline;
-    width: 232px;
-    margin: 1px;
-}
-
-.courselist ul li div .stars {
-    color: gold;
-    margin: 1px;
-}
-
 .header_photo_small {
-    display: none;
+  display: none;
+}
+
+main {
+  padding: 30px 50px;
+}
+
+.coursesType {
+  padding-right: 15px;
+  color: gray;
+  font-weight: bold;
+}
+.open {
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: 700;
+}
+.coursesContainer {
+  border: 1px solid gray;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.categoryDescription {
+  max-width: 700px;
+}
+.exploreButton {
+  color: black;
+  border: 1px solid black;
+  width: 130px;
+  height: 45px;
+  padding: 12px;
+  font-weight: 700;
+  margin-bottom: 23px;
+}
+
+.courseItemContent {
+  width: 15rem;
+  display: inline-flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+.courseItemContent h3 {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0rem;
+}
+.coursePrice {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+.courseAuthor {
+  font-size: 1rem;
+  margin-bottom: 0rem;
+
+  min-height: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.courseBestseller {
+  background-color: #eceb98;
+  color: black;
+  display: inline-block;
+  width: fit-content;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-top: 0.3rem;
 }
 
 footer {
-    margin: 200px;
+  margin: 100px;
 }
-
-.courselist ul li div img {
-    height: 140px;
-    width: 235px;
-    border: 2px solid black;
-}
-
-.courselist ul li div .disc {
-    width: 230px;
-    font-size: 20px;
-    margin: 1px;
-}
-
-.courselist ul li div .creator {
-    width: 230px;
-    margin: 1px;
-}
-
-
 @media (max-width: 1280px) {
-    .business {
-        display: none;
-    }
+  .business {
+    display: none;
+  }
 
-    header .ads {
-        width: 300px;
-        top: 150px;
-        left: 250px;
-        padding: 10px;
-    }
+  header .ads {
+    width: 300px;
+    top: 150px;
+    left: 250px;
+    padding: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .teach,
+  .header_photo {
+    display: none;
+  }
+
+  .header_photo_small {
+    display: block;
+  }
+
+  header {
+    width: 70%;
+  }
+
+  header .ads {
+    position: relative;
+    width: 100%;
+    margin-left: -52%;
+    top: 10px;
+  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 870px) {
+  .search,
+  .cart,
+  .categ,
+  nav form,
+  .signup,
+  .login,
+  .lang {
+    display: none;
+  }
+  body {
+    font-weight: 300;
+    font-size: 0.7rem;
+  }
+  .menubar {
+    display: inline;
+    justify-content: space-between;
+  }
 
-    .teach,
-    .header_photo {
-        display: none;
-    }
-
-    .header_photo_small {
-        display: inline;
-    }
-
-    header {
-        width: 70%;
-    }
-
-    header .ads {
-        position: relative;
-        width: 100%;
-        margin-left: -52%;
-        top: 10px;
-    }
-}
-
-@media (max-width: 830px) {
-    .list {
-        margin-right: 30px;
-    }
-
-    .header img {
-        width: 15rem;
-    }
-
-    .categ {
-        display: none;
-    }
-
-    .bord {
-        height: 50px;
-    }
-}
-
-@media (max-width: 690px) {
-
-    .serout,
-    .cart,
-    nav form,
-    .signup,
-    .login,
-    .lang {
-        display: none;
-    }
-
-    nav .menubar {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav {
-        justify-content: space-between;
-    }
+  nav {
+    justify-content: space-between;
+  }
 }

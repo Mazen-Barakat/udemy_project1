@@ -1,210 +1,136 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Udemy</title>
+  </head>
 
-  <link rel="stylesheet" href="styles.css" />
-  <title>udemy</title>
-</head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li>
+          <button class="menubar butt">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </li>
 
-<body>
-  <nav>
-    <button class="menubar">
-      <span class="material-symbols-outlined"> menu </span>
-    </button>
+        <li>
+          <a href="#home">
+            <img
+              class="udlogo"
+              src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
+              alt="udemy logo"
+            />
+          </a>
+        </li>
 
-    <a href="#home">
-      <img class="udlogo" src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="udemy logo" />
-    </a>
+        <li>
+          <button class="categ butt" type="button">Categories</button>
+        </li>
 
-    <button class="categ" type="button">Categories</button>
+        <li class="search">
+          <form>
+            <div>
+              <span class="material-symbols-outlined"> search </span>
+            </div>
 
-    <form action="search">
-      <button type="submit" class="search">
-        <span class="material-symbols-outlined"> search </span>
-      </button>
-      <input class="search_input" required placeholder="search for anything" />
-    </form>
+            <input id="box" type="text" placeholder="search for anything" />
 
-    <button class="serout" type="button">search</button>
+            <button id="searchBut" class="serout butt" type="submit">
+              Search
+            </button>
+          </form>
+        </li>
 
-    <button class="business" type="button">Udemy Business</button>
+        <li>
+          <button class="business butt" type="button">Udemy Business</button>
+        </li>
 
-    <button class="teach" type="button">Teach on Udemy</button>
-    <button class="cart" type="button">
-      <span class="material-symbols-outlined"> shopping_cart </span>
-    </button>
+        <li>
+          <button class="teach butt" type="button">Teach on Udemy</button>
+        </li>
 
-    <button class="login" type="button">log in</button>
-    <button class="signup" type="button">sign up</button>
+        <li>
+          <button class="cart butt" type="button">
+            <span class="material-symbols-outlined"> Shopping_cart </span>
+          </button>
+        </li>
 
-    <button class="lang">
-      <span class="material-symbols-outlined"> language </span>
-    </button>
-  </nav>
-  <div class="homepage">
-    <header>
-      <img class="header_photo"
-        src="https://img-b.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"
-        alt="poster" />
-      <img class="header_photo_small" src="https://i.ibb.co/2qHbQqM/download.png" alt="poster" />
-      <div class="ads">
-        <h1>New to Udemy? Lucky you.</h1>
-        <p>
-          Courses start at E£169.99.Get your new-student offer befort
-          itexpires.
-        </p>
-      </div>
-    </header>
+        <li>
+          <button class="login butt" type="button">Log in</button>
+        </li>
 
-    <div class="bord"></div>
+        <li>
+          <button class="signup" type="button">Sign up</button>
+        </li>
 
-    <section class="Courses">
-      <div class="selectcourse">
-        <h1>A broad selection of courses</h1>
-        <p>
-          Choose from 185,000 online video courses with new additions
-          published every month
-        </p>
-        <ul class="list">
-          <li>Python</li>
-          <li>Excel</li>
-          <li>Web Development</li>
-          <li>JavaScript</li>
-          <li>Data Science</li>
-          <li>AWS Certification</li>
-          <li>Drawing</li>
-        </ul>
-      </div>
+        <li>
+          <button class="lang butt">
+            <span class="material-symbols-outlined"> language </span>
+          </button>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="coursesbox">
-        <div>
-          <h2>Expand your career opportunities with Python</h2>
+    <div class="homepage">
+      <header>
+        <img
+          class="header_photo"
+          src="https://img-b.udemycdn.com/notices/web_banner/slide_1_image_udlite/b8f46419-eca3-44c1-8ba0-ed2ca89f8884.jpg"
+          alt="poster"
+        />
+        <img
+          class="header_photo_small"
+          src="https://i.ibb.co/2qHbQqM/download.png"
+          alt="poster"
+        />
+        <div class="ads">
+          <h1>New to Udemy? Lucky you.</h1>
           <p>
-            Take one of Udemy’s range of Python courses and learn how to code
-            using this incredibly useful language. Its simple syntax and
-            readability makes Python perfect for Flask, Django, data science,
-            and machine learning. You’ll learn how to build everything from
-            games to sites to apps. Choose from a range of courses that will
-            appeal to both beginners and advanced developers alike.
+            Courses start at E£169.99.Get your new-student offer befort
+            itexpires.
           </p>
-          <button type="button">Explore Python</button>
         </div>
+      </header>
+    </div>
 
-        <div class="courselist">
-          <ul>
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">price = $50.00</h4>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">price = $50.00</h4>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">price = $50.00</h4>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">$50.00</h4>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">price = $50.00</h4>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <img src="https://img-b.udemycdn.com/course/240x135/4230080_0693.jpg"
-                  alt="Python For Beginners [in Arabic]" />
-                <h3 class="disc">Python For Beginners [in Arabic]</h3>
-                <h4 class="creator">ElAmir Mahmoud Mansour</h4>
-                <div class="stars">
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star </span>
-                  <span class="material-symbols-outlined"> star_half </span>
-                </div>
-                <h4 class="price">price = $50.00</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
+    <main>
+      <h1>A broad selection of courses</h1>
+      <p>
+        Choose from 185,000 online video courses with new additions published
+        every month
+      </p>
+      <div>
+        <span class="open coursesType">Python</span>
+        <span class="coursesType">Excel</span>
+        <span class="coursesType">Web Development</span>
+        <span class="coursesType">JavaScript</span>
+        <span class="coursesType">Data Science</span>
+        <span class="coursesType">AWS Certification</span>
+        <span class="coursesType">Drawing</span>
       </div>
-    </section>
-  </div>
+      <div class="coursesContainer">
+        <h2>Expand your career opportunities with Python</h2>
+        <p class="categoryDescription">
+          Take one of Udemy's range of Python courses and learn how to code
+          using this incredibly useful language. Its simple syntax and
+          readability makes Python perfect for Flask, Django, data science, and
+          machine learning. You'll learn how to build everything from games to
+          sites to apps. Choose from a range of courses that will appeal to ...
+        </p>
+        <button class="exploreButton">Explore Python</button>
+        <div class="coursesList"></div>
+      </div>
+    </main>
+  </body>
   <footer></footer>
-</body>
-
+  <script src="script.js"></script>
 </html>
