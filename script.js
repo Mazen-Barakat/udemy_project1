@@ -10,6 +10,7 @@ const courses = ({ title, author, image, price, bestseller }) => {
 
 const newCourses = async (search) => {
   const coursesList = document.getElementsByClassName("coursesList")[0];
+  coursesList.innerHTML = "";
   const coursesInfo = await fetch(
     `${"http://localhost:3000/courses"}?title_like=${search}`
   ).then((p) => p.json());
